@@ -1,9 +1,10 @@
-@import "../omarchy/current/theme/waybar.css";
-@define-color bg @background;
-@define-color fg @foreground;
-@define-color red #df6124;
-@define-color grey #363636;
-@define-color blink-fg #2f4f4f;
+/*Credits: https://github.com/HANCORE-linux/waybar-themes.git*/
+
+@define-color bg rgba(10, 10, 10, 0.85);
+@define-color fg #e5e5e5;
+@define-color red #dc143c;
+@define-color grey #1a1a1a;
+@define-color blink-fg #8b0000;
 
 * {
     font-family: "JetBrainsMono Nerd Font";
@@ -20,7 +21,6 @@ window#waybar  {
 }
 
 /* Container L1 */
-
 #waybar > box {
   margin: 2px 17px 5px 8px;
   padding: 2px 0px 2px 0px;
@@ -40,12 +40,6 @@ window#waybar.empty #mpris {
     background-color: transparent;
 }
 
-/* Container module right */
-
-
-
-/* Container module center */
-
 .modules-left {
 margin-left: 5px;
 }
@@ -53,7 +47,6 @@ margin-left: 5px;
 .modules-right {
 margin-right: 5px;
 }
-
 
 #workspaces {
   background-color: @bg;
@@ -107,8 +100,8 @@ margin-right: 5px;
   color: @bg;
 }
 
-#custom-omarchy {  
-  background-image: url("bob2.svg");
+#custom-batman {  
+  background-image: url("bat.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -116,8 +109,7 @@ margin-right: 5px;
   margin: 0px 5px 0px 0px;
 }
 
-
-  /* L1 single groups */
+/* L1 single groups */
 #tray,
 #idle_inhibitor,
 #memory,
@@ -143,7 +135,8 @@ margin-right: 5px;
 #power-profiles-daemon.power-saver,
 #custom-weather,
 #custom-cava,
-#custom-clock,
+#clock,
+#clock.date,
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update  {
@@ -153,7 +146,6 @@ margin-right: 5px;
   padding: 1px 8px 1px 8px;
   margin: 0px 0px 0px 0px;
 }
-
 
 #battery,
 #battery.discharging,
@@ -174,8 +166,13 @@ margin-right: 5px;
   padding-right: 8px;
 }
 
-#custom-clock {
+#clock {
   color: @red;
+}
+
+#clock.date {
+  color: @fg;
+  margin-right: 8px;
 }
 
 #bluetooth {
@@ -191,7 +188,6 @@ padding-right: 2px;
 tooltip {
   padding: 2px;
 }
-
 
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
@@ -219,8 +215,8 @@ tooltip {
  font-size: 10px;
  border: 3px ridge @grey;
  border-radius: 8px;
- 
 }
+
 tooltip label {
     color: alpha(@fg, 1);
     font-weight: normal;
@@ -235,7 +231,6 @@ tooltip label {
   color: #a55555;
 }
 
-
 #custom-separator3,
 #custom-separator2,
 #custom-separator {
@@ -246,7 +241,6 @@ tooltip label {
   padding-right: 4px;
   font-size: 10px;
   color: @fg;
-  
 }
 
 #custom-separator6 {
@@ -271,8 +265,6 @@ tooltip label {
 }
 
 /* Specific animation Module */
-
-
 #custom-screenrecording-indicator {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -302,35 +294,21 @@ tooltip label {
 margin: 0px 6px 0px 0px;
 padding: 0px 9px;
 border-radius: 2px;
-background-color: @red; /*optional use @red for omarchy logo consistencie or @fg to match other themes colors*/
+background-color: @red;
 opacity: 1;
 color: @bg;
-/*animation: repeat;
-	animation-name: blink3;
-	animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;*/
 }
-
-/* remove comment for cava color transmissions
-@keyframes blink3 {
-    to {
-        color: @cava-fg;
-        
-    }
-}*/
 
 #mpris {
 margin: 0px 6px 0px 8px;
 padding: 0px 9px;
 border-radius: 2px;
-background-color: @red; /*optional use @red for omarchy logo consistencie or @fg to match other themes colors*/
+background-color: @red; 
 opacity: 1;
 color: @bg;
 animation: repeat;
-	animation-name: blink;
-	animation-duration: 3s;
+    animation-name: blink;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -339,7 +317,6 @@ animation: repeat;
 @keyframes blink {
     to {
         color: @blink-fg;
-        
     }
 }
 
