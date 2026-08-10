@@ -24,7 +24,7 @@
 ### Output configuration
 #
     # Wallpaper
-    output * bg /usr/share/backgrounds/1337072.jpeg fill
+	    output * bg /usr/share/backgrounds/bat-bg1.jpg fill
     # Example configuration:
     #
     #   output HDMI-A-1 resolution 1920x1080 position 1920,0
