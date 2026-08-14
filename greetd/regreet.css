@@ -1,0 +1,32 @@
+box {
+    background-color: transparent;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.2)
+    font-family: "JetBrainsMono Nerd Font";
+    color: white;
+}
+
+entry {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: 2px solid rgba(220, 20, 60, 0.5);
+    border-radius: 8px;
+}
+
+entry:focus {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(220, 20, 60, 1.0);
+}
+
+button {
+    babackground-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8 px
+}
+
+button:hover {
+    background-color: rgba(220, 20, 60, 0.7);
+}

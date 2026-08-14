@@ -1,0 +1,2 @@
+exec "/usr/local/bin/regreet --style /etc/greetd/regreet.css; swaymsg exit"
+include /etc/sway/config.d/*

@@ -64,7 +64,10 @@
 # Basics
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+t exec $term
+
+    # Strat a Browser-Tab
+    bindsym $mod+b exec brave-origin
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -141,7 +144,7 @@
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    bindsym $mod+c splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -232,6 +235,4 @@
 
 
 exec lxqt-policykit-agent
-exec qt5ct
-exec qt6ct
 set $QT_QPA_PLATFORMTHEME qt5ct   

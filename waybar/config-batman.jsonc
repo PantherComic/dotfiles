@@ -216,7 +216,7 @@
   },
   
   "mpris": {
-    "format": " {dynamic}",
+    "format": " {dynamic}",
     "format-paused": "<span color='#1b1b1b'>{status_icon} {dynamic}</span>",
     "title-len": 20,
     "interval": 1, 
@@ -224,7 +224,7 @@
     "dynamic-importance-order": ["position", "length", "artist"],
     "tooltip-format": "{player} ({status}):\n{artist} - {title}",  
     "status-icons": {
-      "paused": "󰝛"
+      "paused": ""
     },
     "ignored-players": ["firefox", "brave"]
   },

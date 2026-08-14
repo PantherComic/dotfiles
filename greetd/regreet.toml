@@ -1,0 +1,10 @@
+[background]
+path = "/usr/share/backgrounds/bat-bg1.jpg"
+fit = "Cover"
+
+[GTK]
+application_prefer_dark_theme = true
+theme_name = "Adwaita-dark"
+font_name = "JetBrainsMono Nerd Font 11"
+icon_theme_name = "Papirus-Dark"
+cursor_theme_name = "Adwaita"
